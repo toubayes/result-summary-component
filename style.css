@@ -1,0 +1,181 @@
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobal-blue: hsl(234, 85%, 45%);
+--Light-slate-blue : hsl(252, 100%, 67%);/*(background)**/
+--Light-royal-blue : hsl(241, 81%, 54%);/*(background)*/
+--Violet-blue : hsla(256, 72%, 46%, 1);/*(circle)*/
+--Persian-blue : hsla(241, 72%, 46%, 0.189);/* (circle) */
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 18px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+}
+.content .component{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 25px;
+}
+.content .component .result {
+    text-align: center;
+    width:400px;
+    max-width: 100%;
+    background: var(--Light-slate-blue);
+    border-radius: 25px;
+    padding: 19px;
+}
+.content .component .result h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--Dark-gray-blue);
+    margin-bottom:30px;
+
+}
+.content .component .result .myscore{
+border-radius: 50%;
+background-color: var(--Violet-blue );
+width: 100px;
+height: 100px;
+margin: 20px  auto;
+padding: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.content .component .result .myscore h1{
+ color: white;
+ margin-bottom: 10px;
+ font-size: 47px;
+}
+.content .component .result .myscore span{
+ color: var(Persian-blue);
+}
+.content .component .result > h1{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: var(--White);
+}
+.content .component .result p{
+    font-weight: bold;
+    line-height: 1.5;
+    color: var(--Dark-gray-blue);
+    width: 290px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.content .component .summary{
+    border-radius: 15px;
+    padding: 19px;
+    background-color: var(--White);
+    width: 400px;
+    max-width: 100%;
+}
+.content .component .summary  h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--Dark-gray-blue);
+
+    margin-bottom: 20px;
+}
+.content .component .summary .sum{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border-radius: 6px;
+    padding: 15px ;
+}
+.content .component .summary  .sum{
+    background-color: hsla(0, 100%, 67%, 0.2);
+    margin: 15px 0;
+}
+.content .component .summary .sum:nth-child(3){
+    background-color: hsla(39, 100%, 56%, 0.2);
+    margin: 15px 0;
+}
+.content .component .summary .sum:nth-child(4){
+    background-color:  hsla(166, 100%, 37%, 0.2);;
+    margin: 15px 0;
+}
+.content .component .summary .sum:nth-child(5){
+    background-color: hsla(234, 85%, 45%, 0.2);
+    margin: 15px 0;
+}
+.content .component .summary .sum .reaction{
+    display: flex;
+    
+}
+.content .component .summary .sum .reaction p{
+color: var(--Light-red);
+margin-left: 10px;
+    
+}
+.content .component .summary .sum .memory{
+    display: flex;
+}
+.content .component .summary .sum .memory p{
+   color: var(--Orangey-yellow);
+   margin-left: 10px;
+}
+.content .component .summary .sum .verbal{
+    display: flex;
+}
+.content .component .summary .sum .verbal p{
+    color: var(--Green-teal);
+    margin-left: 10px;
+}
+.content .component .summary .sum .visual{
+    display: flex;
+}
+.content .component .summary .sum .visual p{
+    color: var(--Cobal-blue);
+    margin-left: 10px;
+}
+.content .component .summary .sum > p{
+    font-size: 1em;
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+
+}
+
+.content .component .summary .sum > p span{
+    font-size: 1em;
+    color: var(--Persian-blue);
+    font-weight: bold;
+
+}
+.content .component .summary .sum > p span{}
+
+.content .component .summary .button-con{
+    margin-top: 20px;
+    color: var(--Persian-blue);
+    font-weight: normal;
+}
+.content .component .summary .button-con button{
+   background-color: var(--Dark-gray-blue);
+   border: none;
+   border-radius: 25px;
+   padding: 13px;
+   color: white;
+text-transform: capitalize;
+   width: 100%;
+}
