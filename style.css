@@ -37,7 +37,10 @@ body{
     text-align: center;
     width:400px;
     max-width: 100%;
-    background: var(--Light-slate-blue);
+    background-image: linear-gradient(
+        var(--Light-slate-blue),
+        var(--Light-royal-blue)
+      );
     border-radius: 25px;
     padding: 19px;
 }
@@ -50,7 +53,10 @@ body{
 }
 .content .component .result .myscore{
 border-radius: 50%;
-background-color: var(--Violet-blue );
+background-image: linear-gradient(
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
 width: 100px;
 height: 100px;
 margin: 20px  auto;
